@@ -1,0 +1,16 @@
+/*Import d'un font*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+body {
+    font-family: 'Baskervville', serif;
+}
+
+h1{
+    color: orangered;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    color: #1d33c4;
+}
