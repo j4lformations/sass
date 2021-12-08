@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/*Les selecteurs d'elements CSS*/
+/*=============================*/
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    color: antiquewhite;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: orangered;
+    text-align: center;
+}
+
+h2 {
+    text-transform: capitalize;
+    background-color: #2a2727;
+    color: yellow;
+}
+
+section {
+    background-color: crimson;
+    text-align: justify;
+}
+
+/*Le sélecteur d'identifiant CSS*/
+/*==============================*/
+
+/*Un nom d'identification ne peut pas commencer par un chiffre !*/
+#monId {
+    background-color: teal;
+}
+
+
+/*Le sélecteur de classe CSS*/
+/*==========================*/
+.maClasse {
+    background-color: #1976d2;
+}
+
+p.centrer {
+    text-align: center;
+    color: orange;
+}
+
+.large {
+    font-size: 2rem;
+    background-color: #2196f3;
+}
+
+/*Le sélecteur universel CSS*/
+/*==========================*/
+* {
+    padding: 1rem;
+}
