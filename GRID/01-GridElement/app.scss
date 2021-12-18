@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  //display: inline-grid;
+  font-size: 2.5rem;
+
+  margin: 3rem auto;
+  //width: 90%;
+  border: #1d33c4 1rem solid;
+  background-color: #1d33c4;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem .9rem;
+
+}
+
+.item {
+  background-color: #a0d1e8;
+  padding: 2rem;
+  text-align: center;
+}

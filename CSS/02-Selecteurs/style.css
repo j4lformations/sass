@@ -29,7 +29,9 @@ section {
 
 /*Un nom d'identification ne peut pas commencer par un chiffre !*/
 #monId {
-    background-color: teal;
+    /*background-color: teal;*/
+    background-color: rgba(0, 77, 64, .5);
+    /*opacity: .5;*/
 }
 
 
@@ -53,4 +55,7 @@ p.centrer {
 /*==========================*/
 * {
     padding: 1rem;
+}
+
+.box {
 }

@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.clearfix::after {
+    margin: 2rem auto;
+    clear: both;
+    content: "";
+}

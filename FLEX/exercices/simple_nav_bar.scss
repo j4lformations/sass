@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*
+  Les font-family du projet
+  -------------------------
+
+  font-family: 'Monoton', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Yeseva One', cursive;
+*/
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+#nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: #ccc;
+  width: 60rem;
+
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    &.perso{
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

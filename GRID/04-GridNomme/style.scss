@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.grid-container {
+  font-size: 3rem;
+  background-color: #f0f4c3 ;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 80%;
+  text-transform: uppercase;
+
+  display: grid;
+  //grid-template-columns: repeat(6, auto);
+  grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+
+  grid-gap: 1rem;
+
+  div {
+    background-color: #00bfa5 ;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.right {
+  grid-area: right;
+}
+.footer{
+  grid-area: footer;
+}

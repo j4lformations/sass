@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*
+  Les font-family du projet
+  -------------------------
+
+  font-family: 'Monoton', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Yeseva One', cursive;
+*/
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #263238;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+          minmax(6rem, auto)
+          [start]
+          repeat(8, minmax(min-content, 14rem))
+          [end]
+          minmax(6rem, auto);
+}
+
+.grille {
+  grid-column: start / end;
+  margin: 1rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, auto));
+  grid-template-areas:
+          "header header header header header header header header"
+          "nav nav nav nav nav nav nav nav"
+          "ariane ariane ariane ariane ariane ariane ariane ariane"
+          "content content content content content content content content"
+          "footer footer footer footer footer footer footer footer";
+  grid-gap: .2rem;
+}
+
+.header {
+  grid-area: header;
+  //background-color: #ef7a16;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1.5rem, auto));
+  grid-template-areas: "contact contact contact contact contact i18n user panier";
+
+  @media screen and (max-width: 630px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "contact contact contact contact contact"
+            "i18n i18n i18n i18n i18n"
+            "user user user user user"
+            "panier panier panier panier panier ";
+    .contact {
+      font-size: 2rem;
+    }
+    .i18n, .user, .panier {
+      text-align: left;
+      font-size: 1.6rem;
+    }
+    .contact, .i18n, .user, .panier {
+      padding: .8rem ;
+    }
+  }
+}
+
+.contact {
+  grid-area: contact;
+  font-family: 'Yeseva One', cursive;
+  font-size: 2rem;
+}
+
+.i18n {
+  grid-area: i18n;
+  text-align: center;
+}
+
+.user {
+  grid-area: user;
+  text-align: center;
+}
+
+.panier {
+  grid-area: panier;
+  text-align: center;
+}
+
+
+span {
+  vertical-align: middle;
+  margin-right: .8rem;
+  font-size: 3rem;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #db6161;
+}
+
+.ariane {
+  grid-area: ariane;
+  background-color: #f5cb04;
+}
+
+.content {
+  grid-area: content;
+  background-color: #8cc48d;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3e80f6;
+}
+
+
