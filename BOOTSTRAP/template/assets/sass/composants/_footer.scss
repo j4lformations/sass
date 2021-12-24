@@ -1,0 +1,78 @@
+footer {
+  background-color: $couleur-primaire-claire;
+
+  .footer-wrappper {
+    background-color: $couleur-secondaire;
+    padding: 1rem;
+
+    .single-footer-caption {
+      color: white;
+      margin: 1rem;
+
+      .titre {
+        font-family: 'Yeseva One', cursive;
+        font-size: 2rem;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: .2rem $couleur-primaire-claire solid;
+      }
+
+      .content {
+        padding: 1rem .5rem;
+        text-align: justify;
+
+        ul {
+          list-style: none;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            //width: 100%;
+            &:hover {
+              color: $couleur-secondaire;
+              transform: translateY(-1px);
+              font-weight: bold;
+            }
+
+            &:active {
+              transform: translateY(1px);
+            }
+
+            a {
+              padding: .5rem;
+              text-decoration: none;
+              list-style: none;
+              color: inherit;
+              justify-items: center;
+              justify-content: center;
+              text-transform: capitalize;
+
+              &:hover {
+                color: $couleur-primaire;
+              }
+            }
+          }
+        }
+
+        p {
+          padding: 2rem 0 0;
+          display: flex;
+          justify-content: space-between;
+
+          i, span {
+            font-size: 3rem;
+            vertical-align: middle;
+            margin-right: 2rem;
+
+            &:hover {
+              color: $couleur-primaire;
+            }
+          }
+        }
+      }
+    }
+  }
+}

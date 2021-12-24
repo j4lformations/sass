@@ -1,0 +1,306 @@
+@import "../bootstrap/css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*
+  Les font-family du projet
+  -------------------------
+
+  font-family: 'Monoton', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Yeseva One', cursive;
+*/
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    color: #263238;
+}
+
+.main-header .header-top {
+    padding: 1rem;
+}
+
+.main-header .header-top .logo {
+    font-family: "Monoton", cursive;
+    font-size: 3.5rem;
+}
+
+.main-header .header-top .logo img {
+    height: 5rem;
+}
+
+.main-header .header-top .logo a {
+    text-decoration: none;
+    color: #263238;
+}
+
+.main-header .header-top .logo a:hover {
+    color: #00bfa5;
+}
+
+.main-header .header-top form {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .header-top form input.form-control {
+    border-radius: 0;
+    font-size: 1.6rem;
+    height: 4rem;
+}
+
+.main-header .header-top form button.btn {
+    border-radius: 0;
+    height: 4rem;
+    background-color: #263238;
+    color: white;
+}
+
+.main-header .header-top form button.btn span {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-header .header-top form button.btn:hover {
+    background-color: #00bfa5;
+}
+
+.main-header .header-top form button.btn:active {
+    transform: translateY(0.5px);
+}
+
+.main-header .header-top ul {
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.main-header .header-top ul a {
+    text-decoration: none;
+    color: #263238;
+}
+
+.main-header .header-top ul a span {
+    padding: 0 2rem;
+    vertical-align: middle;
+    font-size: 3rem;
+}
+
+.main-header .header-top ul a:hover {
+    color: #00bfa5;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header .header-top ul {
+        justify-content: space-between;
+    }
+
+    .main-header .header-top ul span {
+        padding: 0;
+    }
+}
+
+.main-header .header-bottom {
+    background-color: #263238;
+}
+
+.main-header .header-bottom li {
+    padding: 0 2rem;
+}
+
+.main-header .header-bottom a {
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.main-header .header-bottom a:hover {
+    color: #00bfa5;
+}
+
+#news_letter {
+    background-image: linear-gradient(to right bottom, rgba(236, 239, 241, 0.3), rgba(207, 216, 220, 0.6)), url(../images/2021-12-23_15h16_46.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    color: #b9f6ca;
+    border: none;
+}
+
+#news_letter .content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#news_letter .content .titre {
+    padding-top: 1rem;
+    font-family: "Yeseva One", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #263238;
+}
+
+#news_letter .content .texte {
+    padding: 0.5rem;
+    color: #000;
+    text-align: justify;
+}
+
+#news_letter .content .inscription {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+#news_letter .content .inscription i {
+    font-size: 4rem;
+    vertical-align: middle;
+    color: #263238;
+}
+
+@media screen and (max-width: 768px) {
+    #news_letter .content .inscription i {
+        display: none;
+    }
+}
+
+#news_letter .content .inscription input {
+    height: 4rem;
+    border-radius: 3rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    outline: 0;
+}
+
+#news_letter .content .inscription input:active {
+    outline: white;
+    border: 1px solid #00bfa5 !important;
+}
+
+@media screen and (max-width: 768px) {
+    #news_letter .content .inscription input {
+        width: 100%;
+    }
+}
+
+#news_letter .content .inscription button {
+    font-size: 1.8rem;
+    background-color: #263238;
+    height: 4rem;
+    color: white;
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+
+#news_letter .content .inscription button:hover {
+    background-color: #00bfa5;
+    color: #000;
+}
+
+#news_letter .content .inscription button:active {
+    border: none;
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 768px) {
+    #news_letter .content .inscription button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+footer {
+    background-color: #fef4f4;
+}
+
+footer .footer-wrappper {
+    background-color: #263238;
+    padding: 1rem;
+}
+
+footer .footer-wrappper .single-footer-caption {
+    color: white;
+    margin: 1rem;
+}
+
+footer .footer-wrappper .single-footer-caption .titre {
+    font-family: "Yeseva One", cursive;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 0.2rem #fef4f4 solid;
+}
+
+footer .footer-wrappper .single-footer-caption .content {
+    padding: 1rem 0.5rem;
+    text-align: justify;
+}
+
+footer .footer-wrappper .single-footer-caption .content ul {
+    list-style: none;
+}
+
+footer .footer-wrappper .single-footer-caption .content ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .footer-wrappper .single-footer-caption .content ul li:hover {
+    color: #263238;
+    transform: translateY(-1px);
+    font-weight: bold;
+}
+
+footer .footer-wrappper .single-footer-caption .content ul li:active {
+    transform: translateY(1px);
+}
+
+footer .footer-wrappper .single-footer-caption .content ul li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    justify-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+footer .footer-wrappper .single-footer-caption .content ul li a:hover {
+    color: #00bfa5;
+}
+
+footer .footer-wrappper .single-footer-caption .content p {
+    padding: 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-wrappper .single-footer-caption .content p i, footer .footer-wrappper .single-footer-caption .content p span {
+    font-size: 3rem;
+    vertical-align: middle;
+    margin-right: 2rem;
+}
+
+footer .footer-wrappper .single-footer-caption .content p i:hover, footer .footer-wrappper .single-footer-caption .content p span:hover {
+    color: #00bfa5;
+}

@@ -1,0 +1,106 @@
+.main-header {
+  .header-top {
+    padding: 1rem;
+
+    .logo {
+      font-family: "Monoton", cursive;
+      font-size: 3.5rem;
+
+      img {
+        height: 5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: $couleur-primaire-fonce;
+
+        &:hover {
+          color: $couleur-primaire;
+        }
+      }
+    }
+
+    form {
+      //padding: .8rem;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        &.form-control {
+          border-radius: 0;
+          font-size: 1.6rem;
+          height: 4rem;
+        }
+      }
+
+      button {
+        &.btn {
+          border-radius: 0;
+          height: 4rem;
+          background-color: $couleur-primaire-fonce;
+          color: white;
+
+          span {
+            vertical-align: middle;
+            text-align: center;
+          }
+
+          &:hover {
+            background-color: $couleur-primaire;
+          }
+
+          &:active {
+            transform: translateY(.5px);
+          }
+        }
+      }
+    }
+
+    ul {
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      margin: 1rem 0;
+
+      a {
+        text-decoration: none;
+        color: $couleur-primaire-fonce;
+
+        span {
+          padding: 0 2rem;
+          vertical-align: middle;
+          font-size: 3rem;
+        }
+
+        &:hover {
+          color: $couleur-primaire;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        justify-content: space-between;
+        span {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    background-color: $couleur-primaire-fonce;
+
+    li {
+      padding: 0 2rem;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      padding: 2rem;
+
+      &:hover {
+        color: $couleur-primaire;
+      }
+    }
+  }
+}

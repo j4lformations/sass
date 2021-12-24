@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*
+  Les font-family du projet
+  -------------------------
+
+  font-family: 'Monoton', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Yeseva One', cursive;
+*/
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+#conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  background-color: #ccc;
+}
+
+p.centre {
+  width: 20rem;
+  margin: 0;
+  background-color: #fff;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=centrer_item_dans_flex.css.map */

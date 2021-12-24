@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-float.min.css">
+    <title>XY GRID</title>
+    <style>
+        .cell-1, .cell-2 {
+            padding: 1rem;
+        }
+
+        .cell-1 {
+            background-color: #64b5f6;
+        }
+
+        .cell-2 {
+            background-color: #1565c0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-x">
+    <div class="cell cell-1">cellule pleine largeur</div>
+    <div class="cell cell-2">cellule pleine largeur</div>
+</div>
+<hr>
+<div class="grid-x">
+    <div class="cell small-4 cell-1">6 cellules</div>
+    <div class="cell small-8 cell-2">6 cellules</div>
+</div>
+<hr>
+<div class="grid-x grid-margin-x">
+    <div class="cell medium-6 large-4 cell-1">12/6/4 cells</div>
+    <div class="cell medium-6 large-8 cell-2">12/6/4 cells</div>
+</div>
+<hr>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell medium-4 cell-1">cell</div>
+        <div class="cell medium-4 cell-2">cell</div>
+        <div class="cell medium-4 cell-1">cell</div>
+    </div>
+</div>
+<hr>
+<div class="grid-container fluid">
+    <div class="grid-x grid-margin-x">
+        <div class="cell medium-4 cell-1">cell</div>
+        <div class="cell medium-4 cell-2">cell</div>
+        <div class="cell medium-4 cell-1">cell</div>
+    </div>
+</div>
+<hr>
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell medium-4 cell-1">4 cells</div>
+        <div class="cell auto cell-2">Whatever's left!</div>
+    </div>
+</div>
+<hr>
+<div class="grid-x grid-margin-x">
+    <div class="cell large-auto cell-1">One</div>
+    <div class="cell large-auto cell-2">Two</div>
+    <div class="cell large-auto cell-1">Three</div>
+    <div class="cell large-auto cell-2">Four</div>
+    <div class="cell large-auto cell-1">Five</div>
+    <div class="cell large-auto cell-2">Six</div>
+</div>
+
+<!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css"
+      crossorigin="anonymous">
+</body>
+</html>

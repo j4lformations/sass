@@ -1,0 +1,94 @@
+main {
+}
+
+#news_letter {
+  background-image: linear-gradient(to right bottom, rgba(236, 239, 241, .3), rgba(207, 216, 220, .6)), url(../images/2021-12-23_15h16_46.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  color: #b9f6ca;
+  border: none;
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    //
+    //@media screen and (max-width: 576px) {
+    //  display: none;
+    //}
+
+    .titre {
+      padding-top: 1rem;
+      font-family: 'Yeseva One', cursive;
+      font-size: 3rem;
+      text-align: center;
+      color: $couleur-primaire-fonce;
+    }
+
+    .texte {
+      padding: .5rem;
+      color: #000;
+      text-align: justify;
+    }
+
+    .inscription {
+      padding-top: .5rem;
+      text-align: center;
+
+      i {
+        font-size: 4rem;
+        vertical-align: middle;
+        color: $couleur-primaire-fonce;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      input {
+        height: 4rem;
+        border-radius: 3rem;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        outline: 0;
+
+        &:active {
+          outline: white;
+          border: 1px solid $couleur-primaire !important;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      button {
+        font-size: 1.8rem;
+        background-color: $couleur-primaire-fonce;
+        height: 4rem;
+        color: white;
+        padding: 0 2rem;
+        border-radius: 2rem;
+
+        &:hover {
+          background-color: $couleur-primaire;
+          color: #000;
+        }
+
+        &:active {
+          border: none;
+          transform: translateY(1px);
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
